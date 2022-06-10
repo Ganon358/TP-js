@@ -1,0 +1,83 @@
+<!DOCTYPE html>​
+
+<html lang="fr">​
+
+    <head>​
+
+        <meta charset="UTF-8" />
+        <link href="../css/style.css"rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+        <script src="https://kit.fontawesome.com/c6d2413c18.js" crossorigin="anonymous"></script>​
+
+        <title>machine à sous</title>​
+
+    </head>​
+
+    <body>
+        <div class="score">
+            <h1>Vous possédez <span id="score">500</span> jetons</h1>
+        </div>
+        <img class="jackpot none" id="jackpot" src="../image/jackpot.png">
+        <img class="titre" src="../image/machine.png">
+        
+        <div id="objet1" class="objet1">
+            <div class="item casino none">
+                <img class="logo" src="../image/casino.png">
+            </div>
+            <div class="item diamond none">
+                <img class="logo" src="../image/diamond.png">
+            </div>
+            <div class="item cherry none">
+                <img class="logo" src="../image/cherry.png">
+            </div>
+            <div class="item lemon none">
+                <img class="logo" src="../image/lemon.png">
+            </div>
+        </div>
+        
+        <div id="objet2" class="objet2">
+            <div class="item casino none">
+                <img class="logo2" src="../image/casino.png">
+            </div>
+            <div class="item diamond none">
+                <img class="logo2" src="../image/diamond.png">
+            </div>
+            <div class="item cherry none">
+                <img class="logo2" src="../image/cherry.png">
+            </div>
+            <div class="item lemon none">
+                <img class="logo2" src="../image/lemon.png">
+            </div>
+        </div>
+        
+        <div id="objet3" class="objet3">
+            <div class="item casino none">
+                <img class="logo3" src="../image/casino.png">
+            </div>
+            <div class="item diamond none">
+                <img class="logo3" src="../image/diamond.png">
+            </div>
+            <div class="item cherry none">
+                <img class="logo3" src="../image/cherry.png">
+            </div>
+            <div class="item lemon none">
+                <img class="logo3" src="../image/lemon.png">
+            </div>
+        </div>
+
+        <input type="button" value="utilisez 10 jetons" class="bouton_carrousel" onclick="j10()">
+        <input type="button" value="utilisez 50 jetons" class="bouton_carrousel" onclick="j50()">
+        <input type="button" value="utilisez 100 jetons" class="bouton_carrousel" onclick="j100()">
+        <p class="gagné none"id="gagné">Vous avez gagné <span id="point"></span> point</p>
+        <p class="loose none"id="loose">Domage vous avez perdue <span id="dommage"></span> point</p>
+        <p class="dsl none"id="dsl">Domage vous n'avez rien gagné</p>
+        <p class="erreur none"id="erreur">vous n'avez pas assez de point</p>
+        <div class="gameover none"id="gameover">
+            <p>vous êtes ruiné</p>
+            <a href= "../index.html"><p>retour au menu</p></a>
+        </div>
+        <script src="../js/script.js"></script>
+
+    </body>
+
+</html>

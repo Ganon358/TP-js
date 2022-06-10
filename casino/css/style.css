@@ -1,0 +1,59 @@
+#index{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../image/fond.png) ;
+    background-attachment:fixed;
+}
+
+.titre{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+    height: 800px;
+    color: white;
+}
+
+.lien{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -80vh;
+    color: white;
+}
+
+.jackpot{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.none{
+    display: none;
+}
+
+.logo{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin-top: -56vh;
+    margin-left: 34vw;
+}
+
+.logo2{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin-top: -56vh;
+    margin-left: 43vw;
+}
+
+
+.logo3{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin-top: -56vh;
+    margin-left: 52vw;
+}

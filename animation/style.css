@@ -1,0 +1,56 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-image: url(img/bg.jpg); 
+   background-size: cover;
+   overflow: hidden;
+   
+}
+.animation {
+   position: relative;
+   width: 100%;
+}
+.mask {
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   position: absolute;
+}
+.divided-bg {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 2;
+}
+
+.sequence {
+   background-image: url(img/seq-a.png);
+   width: 301px;  
+   height:398px; 
+   position:absolute;
+   left:19%;
+   top:50%;  
+   transform: translate(-50%,-50%);
+   overflow: hidden;
+   z-index: 3;
+}
+.sequence1 {
+   background-image: url(img/seq-b.png);
+   width: 201px;  
+   height: 297px; 
+   position:absolute;
+   right:10%;
+   top:55%;  
+   transform: translate(-50%,-50%);
+   overflow: hidden;
+   z-index: 300;
+}
+ 
+.left-part, .right-part {
+   z-index: 1;
+}
+
