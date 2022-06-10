@@ -7,6 +7,13 @@
     display: flex;
 }
 
+#bonjour{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../image/QCM.jpg) ;
+    background-attachment:fixed;
+}
 .QCM h1{
     text-align: center;
 }
@@ -79,12 +86,21 @@
 
 .juste{
     color: green;
+    font-size: 30px;
+    background-color: white;
 }
 
 .vrai{
     color: green;
+    background-color: white;
 }
 
 .faux{
     color: red;
+    background-color: white;
+}
+
+.blanc{
+    font-size: 30px;
+    background-color: white;
 }

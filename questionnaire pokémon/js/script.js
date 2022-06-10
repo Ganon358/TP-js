@@ -37,7 +37,8 @@ function response(){
 
     console.log()
 
-    p =  document.forms["question1"]["answer"].value == "rhinoferoce" ? p+1 : p ,correction();
+    p =  document.forms["question1"]["answer"].value == "rhinoferoce" ? p+1 : p ;
+    correction()
 
     p = document.forms["question2"]["answer"].value == "pierre plante" ? p+1 : p;
 

@@ -1,15 +1,21 @@
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-
 body {
    background-image: url(img/bg.jpg); 
    background-size: cover;
    overflow: hidden;
    
 }
+
+.gauche ,.droite {
+   z-index: 1;
+}
+
+.bonjour {
+   display: flex;
+   align-items: center;
+   z-index: 2;
+   justify-content: center;
+}
+
 .animation {
    position: relative;
    width: 100%;
@@ -20,14 +26,8 @@ body {
    width: 100%;
    position: absolute;
 }
-.divided-bg {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   z-index: 2;
-}
 
-.sequence {
+.rouge {
    background-image: url(img/seq-a.png);
    width: 301px;  
    height:398px; 
@@ -38,7 +38,7 @@ body {
    overflow: hidden;
    z-index: 3;
 }
-.sequence1 {
+.bleu {
    background-image: url(img/seq-b.png);
    width: 201px;  
    height: 297px; 
@@ -49,8 +49,3 @@ body {
    overflow: hidden;
    z-index: 300;
 }
- 
-.left-part, .right-part {
-   z-index: 1;
-}
-
