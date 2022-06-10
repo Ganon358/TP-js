@@ -27,22 +27,36 @@ function getAnswer(questionNum, answer){
 
 }
 
-function correction(){
-    const title = document.getElementsByClassName("vrai")[0];
-        title.classList.remove("none");
-}
-
 function response(){
     let p =0
 
     console.log()
 
-    p =  document.forms["question1"]["answer"].value == "rhinoferoce" ? p+1 : p ;
-    correction()
+    if (document.forms["question1"]["answer"].value == "rhinoferoce"){
 
-    p = document.forms["question2"]["answer"].value == "pierre plante" ? p+1 : p;
-
-    p = document.forms["question3"]["answer"].value == "n52" ? p+1 : p;
+        p =  document.forms["question1"]["answer"].value == "rhinoferoce" ? p+1 : p ;
+        const title = document.getElementsByClassName("N1")[0];
+        title.classList.remove("none");
+    }else{
+        const title = document.getElementsByClassName("N01")[0];
+        title.classList.remove("none");
+    }
+    if(document.forms["question2"]["answer"].value == "pierre plante"){
+        p = document.forms["question2"]["answer"].value == "pierre plante" ? p+1 : p;
+        const title = document.getElementsByClassName("N2")[0];
+        title.classList.remove("none");
+    }else{
+        const title = document.getElementsByClassName("N02")[0];
+        title.classList.remove("none");
+    }
+    if(document.forms["question3"]["answer"].value == "n52"){
+        p = document.forms["question3"]["answer"].value == "n52" ? p+1 : p;
+        const title = document.getElementsByClassName("N3")[0];
+        title.classList.remove("none");
+    }else{
+        const title = document.getElementsByClassName("N03")[0];
+        title.classList.remove("none");
+    }
 
     let alakazamChecked = getAnswer("question4", "alakazam");
     let smogogoChecked = getAnswer("question4", "smogogo");
@@ -56,7 +70,14 @@ function response(){
     let amonitarChecked = getAnswer("question5", "amonitar");
     p = pteraChecked && simularbreChecked && !nidokingChecked && amonitarChecked ? p+1 : p;
 
-    p = document.forms["question6"]["answer"].value == "minidraco" ? p+1 : p;
+    if(document.forms["question6"]["answer"].value == "minidraco"){
+        p = document.forms["question6"]["answer"].value == "minidraco" ? p+1 : p;
+        const title = document.getElementsByClassName("N6")[0];
+        title.classList.remove("none");
+    }else{
+        const title = document.getElementsByClassName("N06")[0];
+        title.classList.remove("none");
+    }
 
     let rocheChecked = getAnswer("question7", "roche");
     let combatChecked = getAnswer("question7", "combat");
@@ -64,9 +85,23 @@ function response(){
     let acierChecked = getAnswer("question7", "acier");
     p = rocheChecked && combatChecked && !volChecked && !acierChecked ? p+1 : p;
 
-    p = document.forms["question8"]["answer"].value == "mentali" ? p+1 : p;
+    if(document.forms["question8"]["answer"].value == "mentali"){
+        p = document.forms["question8"]["answer"].value == "mentali" ? p+1 : p;
+        const title = document.getElementsByClassName("N8")[0];
+        title.classList.remove("none");
+    }else{
+        const title = document.getElementsByClassName("N08")[0];
+        title.classList.remove("none");
+    }
 
-    p = document.forms["question9"]["answer"].value == "jadielle" ? p+1 : p;
+    if(document.forms["question9"]["answer"].value == "jadielle"){
+        p = document.forms["question9"]["answer"].value == "jadielle" ? p+1 : p;
+        const title = document.getElementsByClassName("N9")[0];
+        title.classList.remove("none");
+    }else{
+        const title = document.getElementsByClassName("N09")[0];
+        title.classList.remove("none");
+    }
 
     let ectoplasmaChecked = getAnswer("question10", "ectoplasma");
     let nostenferChecked = getAnswer("question10", "nostenfer");
@@ -80,7 +115,14 @@ function response(){
     let armaldoChecked = getAnswer("question11", "armaldo");
     p = maraisteChecked && libegeonChecked && !tyranocifChecked && !armaldoChecked ? p+1 : p;
 
-    p = document.forms["question12"]["answer"].value == "monaflemit" ? p+1 : p;
+    if(document.forms["question12"]["answer"].value == "monaflemit"){
+        p = document.forms["question12"]["answer"].value == "monaflemit" ? p+1 : p;
+        const title = document.getElementsByClassName("N12")[0];
+        title.classList.remove("none");
+    }else{
+        const title = document.getElementsByClassName("N012")[0];
+        title.classList.remove("none");
+    }
 
     let lokhlassChecked = getAnswer("question13", "lokhlass");
     let aqualiChecked = getAnswer("question13", "aquali");
@@ -88,8 +130,14 @@ function response(){
     let demantaChecked = getAnswer("question13", "demanta");
     p = lokhlassChecked && aqualiChecked && !kaimorseChecked && !demantaChecked ? p+1 : p;
 
-    p = document.forms["question14"]["answer"].value == "camerupte" ? p+1 : p;
-
+    if(document.forms["question14"]["answer"].value == "camerupte"){
+        p = document.forms["question14"]["answer"].value == "camerupte" ? p+1 : p;
+        const title = document.getElementsByClassName("N11")[0];
+        title.classList.remove("none");
+    }else{
+        const title = document.getElementsByClassName("N011")[0];
+        title.classList.remove("none");
+    }
     
     let kaorineChecked = getAnswer("question15", "kaorine");
     let vacilysChecked = getAnswer("question15", "vacilys");
