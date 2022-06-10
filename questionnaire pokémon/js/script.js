@@ -132,10 +132,10 @@ function response(){
 
     if(document.forms["question14"]["answer"].value == "camerupte"){
         p = document.forms["question14"]["answer"].value == "camerupte" ? p+1 : p;
-        const title = document.getElementsByClassName("N11")[0];
+        const title = document.getElementsByClassName("N14")[0];
         title.classList.remove("none");
     }else{
-        const title = document.getElementsByClassName("N011")[0];
+        const title = document.getElementsByClassName("N014")[0];
         title.classList.remove("none");
     }
     
